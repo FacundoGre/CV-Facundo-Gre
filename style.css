@@ -1,0 +1,209 @@
+/* Estilos generales */
+
+body {
+	font-family: 'Slabo 27px', serif;
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+/* Estilos del encabezado */
+
+header {
+	/*background-color: #090700;*/
+	background: linear-gradient(#090700, #090700, #090700, #7c7772);
+	text-align: center;
+	padding: 2%;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #000000;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	padding: 12px 16px;
+	z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+body {
+	background-color: #ffffff;
+	position: relative;
+}
+
+body::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url("fondo reescalado.png");
+	background-size: cover;
+	background-position: center;
+	filter: blur(5px);
+	z-index: -1;
+	animation: movimiento 15s infinite linear alternate;
+}
+
+@keyframes movimiento {
+	from {
+		background-position: top;
+	}
+
+	to {
+		background-position: right bottom;
+	}
+}
+
+img {
+	width: 100%;
+	max-width: 300px;
+	display: block;
+	margin: 0 auto;
+	border-radius: 2%;
+	box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.50)
+}
+
+img:not(#modalImage):hover{
+	transform: scale(1.10);
+	cursor: pointer;
+}
+
+h1 {
+	font-size: 36px;
+	margin: 20px 0 0;
+	text-align: center;
+}
+
+.personal-details {
+	list-style: none;
+	margin: 20px 0;
+	padding: 0;
+	text-align: center;
+}
+
+.personal-details li {
+	font-size: 20px;
+	margin: 10px 0;
+}
+
+.education h2,
+.courses h2,
+.languages h2 {
+	margin-top: 40px;
+}
+
+.education ul,
+.courses ul,
+.languages ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.education li,
+.courses li,
+.languages li {
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+.languages .bar-container {
+	background-color: #ddd;
+	border-radius: 5px;
+	height: 10px;
+	margin: 5px 0;
+	overflow: hidden;
+}
+
+.languages .bar {
+	background-color: #133105;
+	height: 100%;
+	transition: width 10s, transform 1s;
+	transform-origin: right;
+}
+
+.languages li:hover .bar {
+	width: 80%;
+}
+
+.languages .bar-5 {
+	width: 50%;
+}
+
+.languages .bar-10 {
+	width: 100%;
+}
+
+.languages .bar-3 {
+	width: 30%;
+}
+
+.languages li:hover .bar {
+	width: 80%;
+	transform: scaleY(1);
+	transition: width 1s, transform 5s;
+}
+
+.bar-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 12px;
+}
+
+/* Estilos del cuerpo */
+
+.introduction h2,
+.skills h2,
+.objectives h2 {
+	margin-top: 40px;
+}
+
+.introduction p {
+	font-size: 20px;
+	margin: 20px 0;
+}
+
+.skills ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	columns: 2;
+}
+
+.skills li {
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+.objectives p {
+	font-size: 20px;
+	margin: 20px 0;
+	text-align: justify;
+}
+
+footer {
+	background: linear-gradient(#ffffff, #232121, #232121, #232121);
+	padding: 2%;
+	text-align: center;
+
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Curriculum Vitae</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+    <header>
+        <div class="dropdown show">
+            <a class="btn btn-dark dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Vías de contacto
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item"
+                    href="mailto:facundogre@gmail.com?subject=Solicitud de Entrevista Laboral&body=Buenos días, he revisado su currículum y me gustaría solicitar una entrevista para discutir sus habilidades y experiencia en profundidad">Gmail</a>
+                <a class="dropdown-item" href="https://www.instagram.com/facundogre/">Instagram</a>
+                <a class="dropdown-item" href="https://www.facebook.com/facundogre/">Facebook</a>
+                <a class="dropdown-item"
+                    href="https://wa.me/5491162175402?text=Hola,%20vi%20tu%20currículum%20y%20me%20gustaría%20saber%20más%20sobre%20tus%20habilidades%20y%20experiencia.">Whatsapp</a>
+            </div>
+        </div>
+    </header>
+    <div style="height: 20px;"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <img src="Yo 2.png" alt="Foto perfil" style="max-width: 50%;" onclick="showImage(this)">
+                <h1>Facundo Gré</h1>
+                <ul class="personal-details">
+                    <li><strong>Edad:</strong> 21 años</li>
+                    <li><strong>Ciudad:</strong> Ituzaingó, Buenos Aires, Argentina</li>
+                    <li><strong>Correo electrónico:</strong> facundogre@gmail.com</li>
+                    <li><strong>Teléfono:</strong> +54 9 11 6217-5402</li>
+                </ul>
+                <div class="education">
+                    <h2>Educación</h2>
+                    <ul style="padding: 1%;">
+                        <li><strong>Secundario:</strong> Instituto Nuestra Señora de Lourdes</li>
+                        <li><strong>Título:</strong> Bachillerato en Economía</li>
+                        <li><strong>Año de graduación:</strong> 2018</li>
+                    </ul>
+                    <ul style="padding: 1%;">
+                        <li><strong>Universitario:</strong> Universidad Nacional de Hurlingham</li>
+                        <li><strong>Carrera:</strong> Tecnicatura Universitaria en Programación</li>
+                        <li><strong>Año de graduación:</strong> En curso</li>
+                    </ul>
+                </div>
+                <div class="courses">
+                    <h2>Cursos</h2>
+                    <ul style="padding: 1%;">
+                        <li><strong>Finalizado:</strong> Analista de Datos - UNAHUR</li>
+                        <li><strong>Finalizado:</strong> Python - UNAHUR</li>
+                        <li><strong>Finalizado:</strong> 1ª Etapa Argentina Programa - Ministerio de Desarrollo</li>
+                        <li><strong>En curso:</strong> 2ª Etapa Argentina Programa - Ministerio de Desarrollo</li>
+                    </ul>
+                </div>
+                <div class="languages">
+                    <h2>Idiomas</h2>
+                    <ul style="padding: 1%;">
+                        <li>
+                            <span class="language">Inglés</span>
+                            <div class="bar-container">
+                                <div class="bar bar-5" data-width="60%">
+                                    <span class="bar-text">60%</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="language">Español</span>
+                            <div class="bar-container">
+                                <div class="bar bar-10" data-width="100%">
+                                    <span class="bar-text">Nativo</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="language">Portugués</span>
+                            <div class="bar-container">
+                                <div class="bar bar-3" data-width="50%">
+                                    <span class="bar-text">50%</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <img src="" id="modalImage" class="img-responsive" alt="Foto perfil">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-8">
+                <div class="introduction">
+                    <h2>Presentación</h2>
+                    <p style="padding: 1%;">Actualmente estoy cursando el primer año de la carrera de "Tecnicatura
+                        Universitaria en Programación".
+                        Soy un estudiante altamente motivado y apasionado por la tecnología y el desarrollo de software,
+                        con un fuerte interés en la creación de soluciones innovadoras.</p>
+                </div>
+                <div class="skills">
+                    <h2>Habilidades</h2>
+                    <ul style="padding: 1%;">
+                        <li>Programación orientada a objetos <b>- Básico</b></li>
+                        <li>Análisis de datos</li>
+                        <li>Estructura de datos <b>- Básico</b></li>
+                        <li>SQL <b>- Básico</b></li>
+                        <li>Python</li>
+                        <li>Javascript</li>
+                        <li>C++</li>
+                        <li>Ruby</li>
+                        <li>Análisis de datos</li>
+                        <li>Armado de PC</li>
+                    </ul>
+                </div>
+                <div class="objectives">
+                    <h2>Objetivos</h2>
+                    <p style="padding: 1%;">Mi objetivo es encontrar mi primer trabajo en el ámbito de la informática y
+                        desarrollarme tanto profesional como personalmente a través de la adquisición de nuevas
+                        habilidades y conocimientos.
+                        Soy una persona persistente y estoy comprometido a aprender y crecer como profesional en el
+                        sector tecnológico, y me encantaría continuar aprendiendo y aplicando mis conocimientos en
+                        proyectos de desarrollo de software.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <footer>
+        <p style="color: white;">© Facundo Gré</p>
+    </footer>
+</body>
+
+</html>
